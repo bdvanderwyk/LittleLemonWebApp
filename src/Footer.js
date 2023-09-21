@@ -1,4 +1,9 @@
-<footer>
+
+    import React from 'react';
+
+    function Footer() {
+      return (
+        <footer>
       <article>
         <h1>Doormat Navigation</h1>
         <ul>
@@ -27,3 +32,6 @@
         </ul>
       </article>
     </footer>
+      );
+    }
+     export default Footer;

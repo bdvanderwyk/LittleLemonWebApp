@@ -1,4 +1,8 @@
-<main>
+import React from 'react';
+
+function Main() {
+  return (
+    <main>
 <section>
   <h1>Little Lemon</h1>
   <h2>Chicago</h2>
@@ -22,3 +26,7 @@
   <p1></p1>
 </section>
 </main>
+  );
+}
+
+export default Main;
