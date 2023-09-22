@@ -1,9 +1,12 @@
 import React from 'react';
+import './Nav.css'
 
 function Nav() {
   return (
-    <nav>
-<ul>
+<header className='header'>
+    <nav className= 'navbar'>
+<ul className='nav-list'>
+  <li><img src="LogoHeader.png" alt='Logo' height={'0px'}/></li>
   <li><a href="#Home">Home</a></li>
   <li><a href= "#About">About</a></li>
   <li><a href= "#Menu">Menu</a></li>
@@ -11,8 +14,7 @@ function Nav() {
   <li><a href= "#OrderOnline">Order Online</a></li>
   <li><a href= "#Login">Login</a></li>
 </ul>
-</nav>
-  );
-}
+  </nav>
+</header>)}
 
 export default Nav;
