@@ -1,0 +1,58 @@
+.wrapper{
+    display: grid;
+    grid-template-rows: 447px 626px 500px 530px;
+}
+
+/* Style the hero container as a grid */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Gap between columns */
+    padding: 20px; /* Add spacing as needed */
+    background-color: #495E57; /* Set the background color */
+  }
+
+  /* Style the left side containing text */
+.hero1{
+  display: block;
+}
+
+  /* Style the headings */
+  .hero1 h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Markazi Text';
+    color: #F4CE14;
+    margin-bottom: 3px;
+}
+
+  .hero1 h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0px;
+    font-family: 'Markkazi';
+    color: #f0f0f0;
+    margin-left: 60px;
+}
+
+  .hero1 p1{
+      display: block;
+      margin-left: 40px;
+      margin-right: 60px;
+      color: white;
+      font-size: 18px;
+      font-family: 'karla';
+      font-weight: 400;
+  }
+
+  /* Style the right side containing the image */
+  .hero2 {
+    text-align: right; /* Right-align the image */
+  }
+
+  /* Style the image */
+  .hero2 img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }

@@ -3,8 +3,8 @@
 
     function Footer() {
       return (
-        <footer>
-      <article>
+        <footer className='footer'>
+      <article className='doormat'>
         <h1>Doormat Navigation</h1>
         <ul>
             <li><a href="#Home">Home</a></li>
@@ -15,7 +15,7 @@
             <li><a href= "#Login">Login</a></li>
         </ul>
       </article>
-      <article>
+      <article className='contacts'>
         <h1>Contact Information</h1>
         <ul>
             <li><a href="#Address">Address</a></li>
@@ -23,7 +23,7 @@
             <li><a href= "#Email">Email</a></li>
         </ul>
       </article>
-      <article>
+      <article className='social'>
         <h1>Social Media Links</h1>
         <ul>
             <li><a href="#Facebook">Facebook</a></li>
