@@ -1,9 +1,11 @@
 
     import React from 'react';
+    import './Footer.css';
 
     function Footer() {
       return (
         <footer className='footer'>
+      <img src='' alt='logofooter'/>
       <article className='doormat'>
         <h1>Doormat Navigation</h1>
         <ul>
