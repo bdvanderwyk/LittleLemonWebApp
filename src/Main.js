@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css';
-
 function Main() {
   return (
     <main className='wrapper'>
@@ -11,12 +10,11 @@ function Main() {
           <p className='about'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         </div>
         <div className='hero2'>
-          <img className='herologo'src="/heroimage.png" alt='fish' height={300} />
+          <img className='herologo' src="/heroimage.png" alt='fish' />
         </div>
       </section>
       <section className='highlights'>
         <h1 className='highhead'>This week's specials!</h1>
-        {/* Add your articles here */}
       </section>
       <section className='test'>
         <h1 className='testhead'>Testimonials</h1>
@@ -37,3 +35,4 @@ function Main() {
 }
 
 export default Main;
+

@@ -52,15 +52,14 @@
 
   /* Style the right side containing the image */
   .hero2 {
-    text-align: right; /* Right-align the image */
+    text-align: center; /* Right-align the image */
   }
 
   /* Style the image */
   .hero2 img {
-    max-height: 400px;
-    display: block;
-    margin-top: 23%;
-    border-radius: 16%;
+    margin-top: 20%;
+    border-radius: 16px;
+    max-height: 10%;
   }
   .about{
     width: 80%;
@@ -89,7 +88,7 @@
       color: #F4CE14;
       margin-bottom: 3px;
   }
-  
+
     .abousec h2 {
       font-size: 40px;
       font-weight: 500;
