@@ -1,0 +1,27 @@
+.specials {
+    text-align: center;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-item {
+    display: inline-block; /* Display menu items inline */
+    vertical-align: top; /* Align items to the top of the container */
+    white-space: normal; /* Allow normal text wrapping for item descriptions */
+    margin-right: 20px; /* Optional margin between items */
+  }
+  .menu-list-container {
+    white-space: nowrap; /* Prevent menu items from wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin: 20px 0; /* Optional margin for spacing */
+    max-width: 80%; /* Set a maximum width for the container */
+  }
+
+  .menu-list {
+    /* Your existing styles for .menu-list */
+    display: inline-flex; /* Use inline-flex to ensure menu items stay in a row */
+  }

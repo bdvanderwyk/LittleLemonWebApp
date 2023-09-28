@@ -1,0 +1,27 @@
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-item-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .menu-item-name {
+    font-size: 1.25rem;
+    margin-top: 8px;
+  }
+
+  .menu-item-price {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .menu-item-description {
+    margin-top: 8px;
+  }

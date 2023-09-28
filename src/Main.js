@@ -1,7 +1,12 @@
 import React from 'react';
 import './Main.css';
+import { Route,Routes } from 'react-router-dom';
+import Reviews from './Reviews';
+import Specials from './Specials';
+
 function Main() {
   return (
+  <>
     <main className='wrapper'>
       <section className='hero'>
         <div className='hero1'>
@@ -14,10 +19,11 @@ function Main() {
         </div>
       </section>
       <section className='highlights'>
-        <h1 className='highhead'>This week's specials!</h1>
+        {<Specials/>}
       </section>
       <section className='test'>
         <h1 className='testhead'>Testimonials</h1>
+        {<Reviews/>}
       </section>
       <section className='aboutsection'>
         <div className='aboutsec1'>
@@ -31,8 +37,11 @@ function Main() {
         </div>
       </section>
     </main>
-  );
+  </>);
 }
-
+/*    <Routes>
+      <Route path="" element={<Home/>}></Route>
+      <Route path="" element={<About/>}></Route>
+    </Routes>*/
 export default Main;
 
