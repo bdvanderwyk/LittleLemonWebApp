@@ -5,36 +5,36 @@ import './Specials.css';
 const Specials = () => {
   const menuItems = [
     {
-      image: '/dish1.jpg',
-      name: 'Deluxe Burger',
+      image: './greeksalad.png',
+      name: 'Greek Salad',
       price: 9.99,
-      description: 'A delicious burger with all the toppings.',
+      description: 'A refreshing blend of crisp cucumbers, ripe tomatoes, feta cheese, Kalamata olives, and zesty dressing.',
     },
     {
-      image: '/dish2.jpg',
-      name: 'Veggie Pizza',
+      image: './veggiepasta.png',
+      name: 'Veggie Pasta',
       price: 12.99,
-      description: 'Fresh vegetables on a crispy crust.',
+      description: 'Al dente pasta tossed with a colorful assortment of fresh vegetables and fragrant herbs, all in a luscious tomato-based sauce.',
     },
     {
-        image: '/dish1.jpg',
-        name: 'Deluxe Burger',
-        price: 9.99,
-        description: 'A delicious burger with all the toppings.',
+        image: './grilledfish.png',
+        name: 'Grilled Fish',
+        price: 14.99,
+        description: 'Expertly seasoned and cooked to perfection, served with a side of vibrant Mediterranean-inspired accompaniments.',
       },
       {
-        image: '/dish2.jpg',
-        name: 'Veggie Pizza',
-        price: 12.99,
-        description: 'Fresh vegetables on a crispy crust.',
+        image: './metaTagImg.png',
+        name: 'Bruschetta',
+        price: 9.99,
+        description: 'freshly diced tomatoes, fragrant basil, and garlic atop toasted artisanal bread.',
       }
     // Add more menu item objects as needed
   ];
 
   return (
     <div className="specials">
-      <h1>This week's specials!</h1>
-      <div className="menu-list-container"> 
+      <h1 className="Specialshead">This week's specials!</h1>
+      <div className="menu-list-container">
       <div className="menu-list">
         {menuItems.map((menuItem, index) => (
           <MenuItem key={index} {...menuItem} />

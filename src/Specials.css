@@ -4,7 +4,6 @@
 
   .menu-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -13,15 +12,31 @@
     vertical-align: top; /* Align items to the top of the container */
     white-space: normal; /* Allow normal text wrapping for item descriptions */
     margin-right: 20px; /* Optional margin between items */
+    min-height: 200px;
   }
   .menu-list-container {
-    white-space: nowrap; /* Prevent menu items from wrapping to the next line */
+    white-space: auto; /* Prevent menu items from wrapping to the next line */
     overflow-x: auto; /* Enable horizontal scrolling */
-    margin: 20px 0; /* Optional margin for spacing */
-    max-width: 80%; /* Set a maximum width for the container */
+    max-width: 1000px;
+    max-height: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .menu-list {
     /* Your existing styles for .menu-list */
     display: inline-flex; /* Use inline-flex to ensure menu items stay in a row */
+  }
+  .menu-item-image {
+    /* Set the image to cover the entire container, maintaining aspect ratio */
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .Specialshead {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReviewList from './ReviewList';
+import './Reviews.css';
 
 const Reviews = () => {
   const reviews = [
@@ -26,9 +27,11 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="app">
+    <div className="testsection">
       <h1>Customer Reviews</h1>
+      <div className='review-list-container '>
       <ReviewList reviews={reviews} />
+      </div>
     </div>
   );
 };
