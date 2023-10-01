@@ -1,20 +1,27 @@
 import React from 'react';
 import './Nav.css'
+import { Route, Routes, Link } from 'react-router-dom';
+import Booking from './Booking.js';
 
 function Nav() {
   return (
-<header className='header'>
-    <nav className= 'navbar'>
-<ul className='nav-list'>
-  <li><img src="LogoHeader.png" alt='Logo' height={'0px'}/></li>
-  <li><a href="#Home">Home</a></li>
-  <li><a href= "#About">About</a></li>
-  <li><a href= "#Menu">Menu</a></li>
-  <li><a href= "#Reservations">Reservations</a></li>
-  <li><a href= "#OrderOnline">Order Online</a></li>
-  <li><a href= "#Login">Login</a></li>
-</ul>
-  </nav>
-</header>)}
+    <header className='header'>
+      <nav className='navbar'>
+        <ul className='nav-list'>
+          <li><img src="LogoHeader.png" alt='Logo' height={'0px'} /></li>
+          <li><Link to='/' className='nav-item'>Home</Link></li>
+          <li><Link to='/About' className='nav-item'>About</Link></li>
+          <li><Link to='/Menu' className='nav-item'>Menu</Link></li>
+          <li><Link to='/OrderOnline' className='nav-item'>Order Online</Link></li>
+          <li><Link to='/Login' className='nav-item'>Login</Link></li>
+          <li><Link to='/Reservations' className='nav-item'>Reservations</Link></li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/Reservations" element={<Booking />} />
+      </Routes>
+    </header>
+  );
+}
 
 export default Nav;

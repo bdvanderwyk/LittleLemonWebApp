@@ -13,6 +13,12 @@
     white-space: normal; /* Allow normal text wrapping for item descriptions */
     margin-right: 20px; /* Optional margin between items */
     min-height: 200px;
+    color: #333333;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   .menu-list-container {
     white-space: auto; /* Prevent menu items from wrapping to the next line */
@@ -38,5 +44,11 @@
   .Specialshead {
     text-align: left;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 8%;
+    color: #333333;
+    font-family: Markazi Text;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }

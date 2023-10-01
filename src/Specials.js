@@ -26,7 +26,7 @@ const Specials = () => {
         image: './metaTagImg.png',
         name: 'Bruschetta',
         price: 9.99,
-        description: 'freshly diced tomatoes, fragrant basil, and garlic atop toasted artisanal bread.',
+        description: 'Freshly diced tomatoes, fragrant basil, and garlic atop toasted artisanal bread.',
       }
     // Add more menu item objects as needed
   ];

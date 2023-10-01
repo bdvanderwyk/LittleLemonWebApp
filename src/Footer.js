@@ -5,7 +5,7 @@
     function Footer() {
       return (
         <footer className='footer'>
-      <img src='' alt='logofooter'/>
+      <img src="LogoHeader.png" alt='Logo'/>
       <article className='doormat'>
         <h1>Doormat Navigation</h1>
         <ul>

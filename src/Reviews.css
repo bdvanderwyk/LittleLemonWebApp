@@ -1,5 +1,8 @@
 .testsection {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
   }
 
   .review-list {
@@ -12,15 +15,28 @@
     vertical-align: top; /* Align items to the top of the container */
     white-space: normal; /* Allow normal text wrapping for item descriptions */
     margin-right: 20px; /* Optional margin between items */
+    border: 1px solid #EDEFEE;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
   .review-list-container {
+    text-align: center;
     white-space: auto; /* Prevent menu items from wrapping to the next line */
     overflow-x: auto; /* Enable horizontal scrolling */
     max-width: 1000px;
     max-height: 300px;
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
   }
-
+.testhead{
+  text-align: center;
+  margin-top: 150px;
+  color: #333333;
+  font-family: 'Karla';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 

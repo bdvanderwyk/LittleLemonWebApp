@@ -27,12 +27,14 @@ const Reviews = () => {
   ];
 
   return (
+  <>
+    <h1 className='testhead'>Customer Reviews</h1>
     <div className="testsection">
-      <h1>Customer Reviews</h1>
       <div className='review-list-container '>
       <ReviewList reviews={reviews} />
       </div>
     </div>
+  </>
   );
 };
 

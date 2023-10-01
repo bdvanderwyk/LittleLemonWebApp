@@ -1,4 +1,35 @@
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #EDEFEE;
+}
+.footer img{
+    max-width: 250px;
+}
+.footer article{
+    min-width: 150px;
+    margin-left: 15px;
+}
+
+h1 {
+    color: #333333;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
 }
