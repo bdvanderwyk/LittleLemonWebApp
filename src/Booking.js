@@ -1,10 +1,11 @@
 import React from 'react';
 import './Booking.css';
+import BookingForm from './BookingForm.js';
 
 function Booking() {
   return (
 <>
-    <h1>Book a Table</h1>
+    <BookingForm/>
 </>)}
 
 export default Booking;
