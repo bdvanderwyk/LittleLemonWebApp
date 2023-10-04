@@ -1,0 +1,41 @@
+label {
+    color: #333333;
+    font-family: Markazi Text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+input, select{
+    color: 333333;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 122.222% */
+}
+.BookingForm{
+    display: flex;
+    justify-content: center;
+}
+form{
+    text-align: center;
+    min-width: fit-content;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+}
+/* BookingForm.css */
+
+.button {
+    background-color: #F4CE14; /* Blue background color */
+    color: 333333; /* White text color */
+    padding: 10px 20px; /* Padding around the button text */
+    border: #333333; /* Remove the button border */
+    border-radius: 16px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }

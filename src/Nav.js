@@ -1,7 +1,6 @@
 import React from 'react';
 import './Nav.css'
-import { Route, Routes, Link } from 'react-router-dom';
-import Booking from './Booking.js';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -14,12 +13,9 @@ function Nav() {
           <li><Link to='/Menu' className='nav-item'>Menu</Link></li>
           <li><Link to='/OrderOnline' className='nav-item'>Order Online</Link></li>
           <li><Link to='/Login' className='nav-item'>Login</Link></li>
-          <li><Link to='/Reservations' className='nav-item'>Reservations</Link></li>
+          <li><Link to='/reservations' className='nav-item'>Reservations</Link></li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/Reservations" element={<Booking />} />
-      </Routes>
     </header>
   );
 }

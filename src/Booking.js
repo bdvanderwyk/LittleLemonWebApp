@@ -1,11 +1,17 @@
 import React from 'react';
-import './Booking.css';
 import BookingForm from './BookingForm.js';
+import Nav from './Nav.js';
+import Footer from './Footer.js';
+import './BookingForm.css';
 
 function Booking() {
   return (
-<>
-    <BookingForm/>
-</>)}
+  <>
+    <Nav/>
+    < div className='BookingForm'>
+      <BookingForm/>
+    </div>
+    <Footer/>
+  </>)}
 
 export default Booking;

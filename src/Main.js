@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Main.css';
 import Reviews from './Reviews';
 import Specials from './Specials';
+import BookingForm from './BookingForm';
+import { Route, Routes } from 'react-router-dom';
+
 
 function Main() {
+  function updateTimes(){ //create the initial state for the availableTimes
+    return availableTimes;
+  };
+  function initializeTimes(){
+    return
+  };
+
+  const [availableTimes, setAvailableTimes] = useState([
+    '17:00', '18:00', '19:00', '20:00', '21:00', '22:00'
+  ]);
   return (
   <>
     <main className='wrapper'>
+    <Routes>
+          <Route path="/reservations" element={<BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />} />
+        </Routes>
       <section className='hero'>
         <div className='hero1'>
           <h1>Little Lemon</h1>
@@ -38,4 +54,3 @@ function Main() {
   </>);
 }
 export default Main;
-
