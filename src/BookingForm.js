@@ -1,85 +1,67 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState } from 'react';
 import './BookingForm.css';
+import ConfirmedBooking from './ConfirmedBooking';
+import { Route, Routes,Link } from 'react-router-dom';
 
-// Define a reducer function
-const availableTimesReducer = (state, action) => {
-  switch (action.type) {
-    case 'REMOVE_TIME':
-      // Filter out the selected time
-      return state.filter((timeOption) => timeOption !== action.payload);
-    default:
-      return state;
-  }
-};
 
-function BookingForm() {
+function BookingForm({ availableTimes, updateTimes, submitForm }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
 
-  // Initialize availableTimes using useReducer
-  const [availableTimes, dispatch] = useReducer(availableTimesReducer, [
-    '17:00',
-    '18:00',
-    '19:00',
-    '20:00',
-    '21:00',
-    '22:00',
-  ]);
+  const handleDateChange = (e) => {
+    const selectedDate = e.target.value;
+    setDate(selectedDate);
+
+  updateTimes(selectedDate);
+  }
 
   const handleTimeChange = (e) => {
     const selectedTime = e.target.value;
-
-    // Dispatch an action to remove the selected time
-    dispatch({ type: 'REMOVE_TIME', payload: selectedTime });
-
-    // Set the time in the BookingForm component
     setTime(selectedTime);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // Create a formData object with the form data
+    const formData = {
+      date,
+      time,
+      guests,
+      occasion,
+    };
+
+    submitForm(formData);
+  };
+
+
   return (
-    <form className='form' style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
-      <label htmlFor="res-date">Choose date</label>
-      <input
-        type="date"
-        id="res-date"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-      />
-      <label htmlFor="res-time">Choose time</label>
-      <select
-        id="res-time"
-        value={time}
-        onChange={handleTimeChange} // Call handleTimeChange when the select value changes
-      >
-        {availableTimes.map((availableTime) => (
+    <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
+       <Routes>
+          <Route path="/ConfirmedBooking" element={<ConfirmedBooking/>} />
+        </Routes>
+    <label htmlFor="res-date">Choose date</label>
+    <input type="date" id="res-date" value={date} onChange={handleDateChange}/>
+    <label htmlFor="res-time">Choose time</label>
+    <select id="res-time" value={time} onChange={handleTimeChange}>
+       {availableTimes.map((availableTime) => (
           <option key={availableTime} value={availableTime}>
             {availableTime}
           </option>
         ))}
-      </select>
-      <label htmlFor="guests">Number of guests</label>
-      <input
-        type="number"
-        placeholder="1"
-        min="1"
-        max="10"
-        id="guests"
-        value={guests}
-        onChange={(e) => setGuests(e.target.value)}
-      />
-      <label htmlFor="occasion">Occasion</label>
-      <select
-        id="occasion"
-        value={occasion}
-        onChange={(e) => setOccasion(e.target.value)}
-      >
-        <option value="Birthday">Birthday</option>
-        <option value="Anniversary">Anniversary</option>
-      </select>
-      <input className='button' type="submit" value="Make Your Reservation" />
-    </form>
+    </select>
+    <label htmlFor="guests">Number of guests</label>
+    <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)}/>
+    <label htmlFor="occasion">Occasion</label>
+    <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+       <option value="Birthday">Birthday</option>
+       <option value="Anniversary">Anniversary</option>
+    </select>
+    <Link to='/ConfirmedBooking' className='ConfirmedBooking'/>
+
+ </form>
   );
 }
 

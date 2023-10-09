@@ -77,7 +77,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-gap: 20px; /* Gap between columns */
-    padding: 20px; /* Add spacing as needed */
+    padding:20px; /* Add spacing as needed */
     background-color: #495E57; /* Set the background color */
     max-height: 400px;
   }
